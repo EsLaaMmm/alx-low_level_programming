@@ -14,6 +14,7 @@ int main(void)
 	for (tens = '0'; tens <= '9'; tens++)
 	{
 		for (ones = (tens + 1); ones <= '9'; ones++)
+		{
 			putchar(tens);
 			putchar(ones);
 
@@ -22,6 +23,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+		}
 	}
 	putchar('\n');
 

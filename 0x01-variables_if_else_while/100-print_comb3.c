@@ -8,22 +8,28 @@
 
 int main(void)
 {
-	int i;
-	int j;
+	int one;
+	int ten;
+	int hundred;
 
-	for (i = 0 ; i < 10 ; i++)
+	for (hundred = '0'; hundred <= '9'; hundred++)
 	{
-		for (j = 0 ; j < 10 ; j++)
+		for (ten = (hundred + 1); ten <= '9'; ten++)
 		{
-			if (i < j &&  i != j)
+			for (one = (ten + 1); one <= '9'; one++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(',');
-				putchar(' ');
+				putchar(hundred);
+				putchar(ten);
+				putchar(one);
+				if (hundred != '7' || ten != '8' || one != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }

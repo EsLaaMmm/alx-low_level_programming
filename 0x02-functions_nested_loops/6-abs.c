@@ -5,14 +5,14 @@
  *
  *@a: parameter to be checked
  *
- * Return: always x
+ * Return: always a
  */
 
-int _abs(int x)
+int _abs(int a)
 {
-	if (x >= 0)
+	if (a >= 0)
 	{
-		return (x);
+		return (a);
 	}
-	return (-x);
+	return (-a);
 }

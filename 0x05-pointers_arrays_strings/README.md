@@ -1,0 +1,1 @@
+pionts arrays and strings
